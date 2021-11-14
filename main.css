@@ -111,7 +111,7 @@ header {
     grid-column-start: 2;
     grid-column-end: 5;
     grid-row-start: 1;
-    background-image: url('idrissa.jpeg');
+    background-image: url('Idrissa.jpeg');
     background-position: right bottom;
     background-repeat: no-repeat;
     background-size: contain;
@@ -288,17 +288,4 @@ footer h1 {
     font-family: 'Poppins';
     font-weight: normal;
     font-size: 1.5rem;
-}
-
-body::-webkit-scrollbar {
-  width: 10px;  
-}
-
-body::-webkit-scrollbar-track {
-  background: white;       
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: rebeccapurple; 
-  border-radius: 20px;      
 }
