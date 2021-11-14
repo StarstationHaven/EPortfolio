@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #4F008D;
+}
+
+.nav-bar{
+    background-color: #AFAEFD;
+}
+
+.nav-bar a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;   
+    display: flex;
+    font-size: 32px;
+    padding-right: 250px;
+
+}
+
+ul a {
+    color: black;
+    font-family: 'Poppins';
+    padding-right: 50px;
+}
+
+ul a:hover {
+    color: white;
+    font-family: 'Poppins';
+    padding-right: 50px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 1.5em;
+    
+}
+
+.logo {
+    font-family: 'Roboto', arial;
+    font-size: 50px;
+    color: #0009DF;
+    font-weight: 800;
+    margin-left: 250px;
+    padding-top: 5px;
+    letter-spacing: 15px;
+}
+
+.logo:hover {
+   color: white;
+   font-weight: 800;
+}
+
+.content {
+    background-color: #897EFF;
+    height: 700px;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  z-index: 2;
+  padding-left: 16px;
+
+}
+
+.content h1 {
+    font-family: 'Poppins';
+    color: white;
+    font-size: 58px;
+    font-weight: 700;
+    margin-left: 273px;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.content h2 {
+    font-family: 'Poppins';
+    color: white;
+    font-size: 24px;
+    font-weight: normal;
+    margin-left: 273px;
+    background-color: #4F008D;
+    text-align: center;
+}
+
+.content h3 {
+    font-family: 'Poppins';
+    color: white;
+    font-size: 24px;
+    font-weight: normal;
+    margin-left: 273px;
+    background-color: #4F008D;
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+
+.content-img {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    background-image: url('idrissa.jpeg');
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 1;
+    background-color:#897EFF;
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 700px;
+    background-color: #897EFF;
+   padding-right: 330px; 
+
+}
+
+.projects h1{
+    font-family: 'Poppins';
+    color: white;
+    font-size: 38px;
+    font-weight: 500;
+    margin-left: 273px;
+    padding-top: 50px;
+}
+
+.projects h2{
+    font-family: 'Poppins';
+    color: white;
+    font-size: 18x;
+    font-weight: normal;
+    margin-left: 273px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+
+.project-grid {
+    display: grid;
+    width: 90%;
+    grid-gap: 5rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    align-items: center;
+    padding-left: 270px;
+    padding-right: 70px;
+}
+
+.project-item {
+    background-color: #897EFF;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.project-item:hover {
+    transform: translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+
+.project-image {
+    display: block;
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.project-content{
+    padding: 3rem;
+}
+
+
+.project-para {
+    font-size: 1.5rem;
+    line-height: 1.7;
+    color: black;
+    margin-bottom: 2.5rem;
+    font-family: 'Poppins';
+    
+}
+
+.project-button {
+    display: block;
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #3363ff;
+    background-color: #d8e0fd;
+    border: none;
+    border-radius: 0.4rem;
+    transition: 0.2s;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+}
+
+.project-button span {
+    margin-left: 1rem;
+    transition: 0.2s;
+}
+
+.project-button:hover, .project-button:active{
+    background-color: #c2cffc;
+}
+
+
+@media only screen and (max-width: 60em) {
+    body {
+    padding: 3rem;
+  }
+
+  .project-grid {
+    grid-gap: 3rem;
+  }
+}
+
+
+
+.About h1{
+    font-family: 'Poppins';
+    color: white;
+    font-size: 38px;
+    font-weight: 500;
+    margin-left: 273px;
+    padding-top: 50px;
+}
+
+.About h2{
+    font-family: 'Poppins';
+    color: white;
+    font-size: 18x;
+    font-weight: normal;
+    margin-left: 273px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.column-2 {
+    float: left;
+    width: 39%;
+    padding: 0px;
+    padding-left:70px;
+    padding-right: 70px;
+    height: 475px;
+    margin:0px;
+    margin-left: 270px;
+    margin-right:-300px;
+    margin-bottom: 70px;
+    background-color: #897EFF;
+    line-height:2;
+}
+
+.column-2 p {
+    font-family: 'Poppins';
+    font-size: 1.2rem;
+}
+
+.large-profile {
+    background: url('GameBasedLearning.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+footer {
+    margin-top: 600px;
+    background-color: #AFAEFD;
+    padding: 1rem;
+    height: 4rem;   
+    text-align: center;
+}
+
+footer h1 {
+    font-family: 'Poppins';
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;  
+}
+
+body::-webkit-scrollbar-track {
+  background: white;       
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rebeccapurple; 
+  border-radius: 20px;      
+}
